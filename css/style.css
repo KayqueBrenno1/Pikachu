@@ -79,3 +79,37 @@ footer{
     text-align: center;
     color: var(--secundary-color);
 }
+/* TABLET */
+@media (max-width: 1024px) {
+    body{
+        padding: 30px;
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+        font-size: 28vw;
+    }
+    h1{
+        transform: translate(0, -30%);
+        font-size: 22vw;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+    }
+    .descricao p{
+        text-align: center;
+    }
+    .pikachu{
+        transform: translate(-45%, -50%);
+    }
+    footer{
+        display: none;
+    }
+}
+/* MOBILE */
+@media (max-width: 480px) {
+
+}
