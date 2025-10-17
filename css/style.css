@@ -1,49 +1,49 @@
-:root{
+:root{ /*ROOT é global, podendo criar variáveis*/
     --primary-color: #F5CF06;
     --secundary-color: #8E4106;
 }
 body{
     height: 100vh;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* a chamada de variável*/
     display: flex;
     flex-direction: column;
     padding: 70px;
-    font-family: Righteous, sans-serif;
+    font-family: Righteous, sans-serif; /*chamar a fonte linkada*/
 }
 header{
     display: flex;
-    align-items: center;
-    gap: 16px;
+    align-items: center; /* alinhamento dos itens no centro */
+    gap: 16px; /* espaçamento entres os itens */
 }
 header span{
     font-size: 32px;
     color: var(--secundary-color);
 }
 main{
-    flex-grow: 1;
+    flex-grow: 1; /* crescer e ocupar o espaço disponível */
     display: flex;
     flex-direction: column;
 }
 .sombra{
-    position: absolute;
+    position: absolute; /* sobreposição entre os itens */
     font-size: 400px;
     color: #ffffff55;
-    z-index: -999;
+    z-index: -999; /* mudança de camada */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%); /* posicionamento livre, dependendo da porcentagem (x, y) */
 }
 h1{
     flex-grow: 1;
     font-size: 300px;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: center;/* formatação de texto */
     align-items: center;
 }
 .container{
     height: 154px;
-    padding-bottom: 75px;
+    padding-bottom: 75px; /* ajustar o espaçamento da borda de baixo do item */
     color: var(--secundary-color);
     display: flex;
     justify-content: space-between;
@@ -84,9 +84,12 @@ footer{
     body{
         padding: 30px;
     }
+    main{
+        justify-content: space-between;
+    }
     .sombra{
         transform: translate(-50%, -180%);
-        font-size: 28vw;
+        font-size: 28vw; /* tamanho do texto de acordo com o tamanho da tela */
     }
     h1{
         transform: translate(0, -30%);
@@ -106,7 +109,7 @@ footer{
         transform: translate(-45%, -50%);
     }
     footer{
-        display: none;
+        display: none; /* anular a formatação */
     }
 }
 /* MOBILE */
